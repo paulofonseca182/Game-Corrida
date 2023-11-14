@@ -26,3 +26,23 @@ button.addEventListener('click', function () {
   }
 
 })
+
+const cars = document.getElementById('players');
+let player = 1;
+const getRunning = document.getElementById('running')
+const getSelectionPlayer = document.getElementById('selectionPlayer')
+console.log(getSelectionPlayer);
+
+cars.addEventListener('click', function (e) {
+  let getClass = e.target.className
+  
+  if (player === 1) {
+    player1.className = `${getClass}`;
+    getSelectionPlayer.innerText = "Player 2"
+    player = 2
+  } else if (player === 2) {
+    player2.className = `${getClass}`
+    getSelectionPlayer.innerText = "Player 1"
+    player = 1;
+  }
+})
