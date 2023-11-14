@@ -14,15 +14,18 @@ button.addEventListener('click', function () {
   const player1Winer = parseInt(player1.style.marginLeft) > window.innerWidth;
   const player2Winer = parseInt(player2.style.marginLeft) > window.innerWidth;
 
-  if (player1Winer) {
-    alert('PLAYER 1 VENCEU!!!');
-    player1.style.marginLeft = 0;
-    player2.style.marginLeft = 0;
-  }
-  if (player2Winer) {
-    alert('PLAYER 2 VENCEU!!!');
-    player1.style.marginLeft = 0;
-    player2.style.marginLeft = 0;
+  switch (true) {
+    case player1Winer:
+      alert('PLAYER 1 VENCEU!!!');
+      player1.style.marginLeft = 0;
+      player2.style.marginLeft = 0;
+      break;
+  
+    case player2Winer:
+      alert('PLAYER 2 VENCEU!!!');
+      player1.style.marginLeft = 0;
+      player2.style.marginLeft = 0;
+      break;
   }
 
 })
