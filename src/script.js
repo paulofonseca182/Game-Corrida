@@ -1,7 +1,13 @@
-const button = document.getElementsByTagName('button')[0]
+const button = document.getElementsByTagName('button')[0];
 
-const player1 = document.getElementById('player1')
-const player2 = document.getElementById('player2')
+const player1 = document.getElementById('player1');
+const player2 = document.getElementById('player2');
+
+const scorePlayer1 = document.getElementById('numberScore1');
+const scorePlayer2 = document.getElementById('numberScore2');
+
+scorePlayer1.innerText = 0
+scorePlayer2.innerText = 0
 
 player1.style.marginLeft = 0;
 player2.style.marginLeft = 0;
@@ -19,12 +25,14 @@ button.addEventListener('click', function () {
       alert('PLAYER 1 VENCEU!!!');
       player1.style.marginLeft = 0;
       player2.style.marginLeft = 0;
+      scorePlayer1.innerText = parseInt(scorePlayer1.innerText) + 1;
       break;
   
     case player2Winer:
       alert('PLAYER 2 VENCEU!!!');
       player1.style.marginLeft = 0;
       player2.style.marginLeft = 0;
+      scorePlayer2.innerText = parseInt(scorePlayer2.innerText) + 1;
       break;
   }
 
@@ -32,9 +40,8 @@ button.addEventListener('click', function () {
 
 const cars = document.getElementById('players');
 let player = 1;
-const getRunning = document.getElementById('running')
-const getSelectionPlayer = document.getElementById('selectionPlayer')
-console.log(getSelectionPlayer);
+const getRunning = document.getElementById('running');
+const getSelectionPlayer = document.getElementById('selectionPlayer');
 
 cars.addEventListener('click', function (e) {
   let getClass = e.target.className

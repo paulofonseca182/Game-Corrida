@@ -3,17 +3,38 @@ body {
     display: block;    
 }
 
+.score {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scorePlyer{
+    background-color: green;
+    border: solid 2px white;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.numberScore {
+    margin-left: 10px;
+    color: white;
+}
+
 .title {
     font-style: italic;
     font-family: fantasy;
     font-size: 50px;
     margin-bottom: 0;
+    margin-top: 30px;
     color:black;
     background-color: green;
     border: solid 2px white;
     text-align: center;
     text-shadow: 2px 2px rgb(255, 255, 255);
     border-radius: 25px;
+    width: 600px;
 }
 
 .selection {
