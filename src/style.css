@@ -1,0 +1,95 @@
+body {
+    background-image: url('./img/imgFundo.jpeg');
+    display: block;    
+}
+
+.title {
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 50px;
+    margin-bottom: 0;
+    color:green;
+    text-align: center;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.selection {
+    text-align: center;
+    font-style: oblique;
+    font-weight: 85px;
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.cars {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.car1 {
+    background-image: url('./img/Mario.gif');
+    background-size: cover;
+    width: 180px;
+    height: 152px;;
+    display: inline-block;
+}
+
+.car2 {
+    background-image: url('./img/Luigi.gif');
+    background-size: cover;
+    width: 180px;
+    height: 152px;;
+    display: inline-block;
+}
+
+.car3 {
+    background-image: url('./img/Princesa.gif');
+    background-size: cover;
+    width: 180px;
+    height: 152px;;
+    display: inline-block;
+}
+
+.car4 {
+    background-image: url('./img/Browser.gif');
+    background-size: cover;
+    width: 180px;
+    height: 152px;;
+    display: inline-block;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    font-size: xx-large;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.running {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.startCar1 {
+    background-image: url('./img/question.png');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+}
+.startCar2 {
+    background-image: url('./img/question.png');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    margin-top: 75px;
+}
