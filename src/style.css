@@ -8,9 +8,12 @@ body {
     font-family: fantasy;
     font-size: 50px;
     margin-bottom: 0;
-    color:green;
+    color:black;
+    background-color: green;
+    border: solid 2px white;
     text-align: center;
     text-shadow: 2px 2px rgb(255, 255, 255);
+    border-radius: 25px;
 }
 
 .selection {
@@ -68,9 +71,11 @@ button {
     margin-top: 15px;
     font-size: xx-large;
     background-color: green;
-    color: white;
+    color: black;
     padding: 15px;
-    border-radius: 10%;
+    border-radius: 25px;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    border: solid 2px white;
 }
 
 .running {
