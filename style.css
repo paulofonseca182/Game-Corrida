@@ -1,6 +1,7 @@
 body {
-    background-image: url('./img/imgFundo.jpeg');
-    display: block;    
+    background-image: url('./img/background.jpeg');
+    display: block;
+    background-size:auto;
 }
 
 .score {
@@ -97,6 +98,10 @@ button {
     border-radius: 25px;
     text-shadow: 1px 1px rgb(255, 255, 255);
     border: solid 2px white;
+}
+
+button:active{
+    border: solid 1px greenyellow;
 }
 
 .running {
